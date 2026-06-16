@@ -56,7 +56,7 @@
   --radius-lg:   12px;
 
   /* type */
-  --display:     'Cinzel', 'Trajan Pro', serif;
+  --display:     'Inter', system-ui, sans-serif;
   --headline:    'Oswald', 'Anton', sans-serif;
   --body:        'Inter', system-ui, sans-serif;
 }
@@ -179,16 +179,19 @@ ul { list-style: none; }
   line-height: 1;
 }
 .nav-logo span { display: inline-block; }
-.nav-logo-diamond {
-  width: 16px;
-  height: 16px;
-  background: var(--blood-hot);
-  transform: rotate(45deg);
-  margin: 0 4px;
-  box-shadow: 0 0 14px rgba(194, 37, 62, 0.55);
+.nav-logo-thunder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin: 0 -4px;
+  color: var(--blood-bright);
+  filter: drop-shadow(0 0 8px rgba(194, 37, 62, 0.55));
   position: relative;
-  top: -2px;
+  top: -1px;
 }
+.nav-logo-thunder svg { width: 100%; height: 100%; display: block; }
 
 .nav-links {
   display: flex;
@@ -1792,7 +1795,7 @@ ul { list-style: none; }
 @media (max-width: 720px) {
   .nav-inner { height: 70px; }
   .nav-logo { font-size: 22px; letter-spacing: 2px; }
-  .nav-logo-diamond { width: 13px; height: 13px; }
+  .nav-logo-thunder { width: 16px; height: 16px; margin: 0 -3px; }
   .nav-cta { display: none; }
   .nav-links {
     position: fixed;

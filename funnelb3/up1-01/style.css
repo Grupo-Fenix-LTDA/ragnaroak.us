@@ -29,7 +29,7 @@
   --ember:       #ff5a3c;
 
   /* type stack */
-  --display:     'Cinzel', 'Trajan Pro', serif;
+  --display:     'Inter', system-ui, sans-serif;
   --headline:    'Oswald', 'Anton', sans-serif;
   --body:        'Inter', system-ui, sans-serif;
 }

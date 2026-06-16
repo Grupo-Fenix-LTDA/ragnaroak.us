@@ -23,7 +23,7 @@
   --rune-gold:   #c8a86a;
   --rune-gold-d: #a18243;
 
-  --display:     'Cinzel', 'Trajan Pro', serif;
+  --display:     'Inter', system-ui, sans-serif;
   --headline:    'Oswald', 'Anton', sans-serif;
   --body:        'Inter', system-ui, sans-serif;
 }

@@ -542,7 +542,7 @@ ul { list-style: none; }
 
 /* ---------- 7. PRICING ---------- */
 .packages-section {
-  padding: 80px 0;
+  padding: 56px 0;
   background:
     radial-gradient(ellipse 60% 40% at 50% 0%, rgba(126, 19, 38, 0.06), transparent 60%),
     var(--ink-deep);
@@ -550,10 +550,10 @@ ul { list-style: none; }
 
 .packages-grid {
   display: grid;
-  grid-template-columns: 1fr 1.08fr 1fr;
-  gap: 28px;
+  grid-template-columns: 1fr 1.24fr 1fr;
+  gap: 22px;
   align-items: start;
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 .pkg-card {
@@ -614,7 +614,7 @@ ul { list-style: none; }
 }
 
 .pkg-body {
-  padding: 26px 22px 24px;
+  padding: 20px 18px 18px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -636,7 +636,7 @@ ul { list-style: none; }
   color: var(--steel-mute);
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   position: relative;
   display: inline-block;
 }
@@ -651,28 +651,32 @@ ul { list-style: none; }
 
 .pkg-img-wrap {
   position: relative;
-  min-height: 180px;
+  min-height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 .pkg-img-wrap6 {
   position: relative;
-  min-height: 180px;
+  min-height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 .pkg-img-wrap img {
   max-width: 100%;
-  max-height: 200px;
+  max-height: 160px;
+  width: auto;
+  object-fit: contain;
   filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.6));
 }
 .pkg-img-wrap6 img {
-  max-width: 200%;
-  max-height: 300px;
+  max-width: 110%;
+  max-height: 175px;
+  width: auto;
+  object-fit: contain;
   filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.6));
 }
 .pkg-bonus-tag {
@@ -693,7 +697,7 @@ ul { list-style: none; }
 
 .pkg-price {
   font-family: var(--headline);
-  font-size: 52px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -1px;
@@ -707,14 +711,14 @@ ul { list-style: none; }
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--steel-mute);
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .pkg-feats {
   border-top: 1px solid var(--ash-line);
   border-bottom: 1px solid var(--ash-line);
-  padding: 14px 0;
-  margin-bottom: 16px;
+  padding: 10px 0;
+  margin-bottom: 12px;
 }
 .pkg-feats li {
   display: flex;
@@ -722,7 +726,7 @@ ul { list-style: none; }
   gap: 8px;
   font-size: 13.5px;
   font-weight: 500;
-  padding: 4px 0;
+  padding: 3px 0;
   justify-content: flex-start;
   text-align: left;
 }
@@ -744,11 +748,11 @@ ul { list-style: none; }
   padding: 6px 14px;
   border-radius: 999px;
   border: 1px solid rgba(160, 26, 48, 0.25);
-  margin: 0 auto 10px;
+  margin: 0 auto 8px;
 }
 
 .pkg-total {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   font-family: var(--headline);
 }
 .pkg-total .was {
@@ -791,7 +795,7 @@ ul { list-style: none; }
   background-repeat: no-repeat, no-repeat;
   color: #1a0e0a;
   font-family: var(--headline);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 1.5px;
   padding: 14px 16px;
@@ -803,7 +807,7 @@ ul { list-style: none; }
     inset 0 1px 0 rgba(255, 240, 190, 0.5),
     inset 0 -2px 0 rgba(120, 80, 0, 0.2),
     0 4px 10px rgba(0, 0, 0, 0.25);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   transition: transform .2s, box-shadow .2s;
   animation: pkg-btn-shine 2.8s ease-in-out infinite;
 }
@@ -821,7 +825,7 @@ ul { list-style: none; }
 }
 
 .pkg-card.featured .pkg-btn {
-  font-size: 15px;
+  font-size: 18px;
   padding: 16px 16px;
   border-color: #ffe28a;
   box-shadow:
@@ -829,6 +833,20 @@ ul { list-style: none; }
     inset 0 -2px 0 rgba(120, 80, 0, 0.22),
     0 6px 14px rgba(0, 0, 0, 0.3);
 }
+
+/* ----- featured (6 bottles): slightly bigger numbers, matching Burntide proportions ----- */
+.pkg-card.featured .pkg-qty { font-size: 40px; }
+.pkg-card.featured .pkg-supply { font-size: 14px; margin-bottom: 12px; }
+.pkg-card.featured .pkg-img-wrap6 { min-height: 175px; margin-bottom: 12px; }
+.pkg-card.featured .pkg-img-wrap6 img { max-height: 195px; max-width: 112%; }
+.pkg-card.featured .pkg-price { font-size: 68px; }
+.pkg-card.featured .pkg-price-per { font-size: 12px; margin-bottom: 14px; }
+.pkg-card.featured .pkg-feats { padding: 12px 0; margin-bottom: 14px; }
+.pkg-card.featured .pkg-feats li { font-size: 14.5px; }
+.pkg-card.featured .pkg-save { font-size: 14px; padding: 7px 16px; margin-bottom: 10px; }
+.pkg-card.featured .pkg-total { margin-bottom: 14px; }
+.pkg-card.featured .pkg-total .now { font-size: 26px; }
+.pkg-card.featured .pkg-total .was { font-size: 16px; }
 
 .pkg-hand {
   position: absolute;

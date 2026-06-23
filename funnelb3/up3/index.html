@@ -13,6 +13,44 @@
 <!-- Scarcity counter (cookie-based) shared with UP1 family -->
 <script src="../up1-01/scarcity.js"></script>
 <link rel="icon" type="image/png" href="images/alphapower-bottle.png">
+
+  <!--
+    BuyGoods tracker + conversion pixel.
+    Replace 12911 with the production account_id once issued.
+    Tracker products mirror the DTC funnelb3 codenames.
+  -->
+  <script>
+    var mysrc = "https://tracking.buygoods.com/track/?a=12911&firstcookie=0"
+      + "&tracking_redirect=&referrer=" + encodeURIComponent(document.referrer)
+      + "&sessid2=" + ReadCookie('sessid2')
+      + "&product=alp6u3_fun_b3&vid1=&vid2=&vid3=&caller_url="
+      + encodeURIComponent(window.location.href);
+    if (typeof add_to_cart !== 'undefined') { mysrc = mysrc + '&add_to_cart=' + add_to_cart; }
+    var newScript = document.createElement('script');
+    newScript.type = 'text/javascript';
+    newScript.defer = true;
+    newScript.src = mysrc;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(newScript, s);
+    function ReadCookie(name) {
+      name += '=';
+      var parts = document.cookie.split(/;\s*/);
+      for (var i = 0; i < parts.length; i++) {
+        var part = parts[i];
+        if (part.indexOf(name) == 0) return part.substring(name.length);
+      }
+      return '';
+    }
+  </script>
+  <script type="text/javascript">
+    setTimeout(function () {
+      var i = document.createElement("iframe");
+      i.async = true;
+      i.style = "display:none";
+      i.setAttribute("src", "https://buygoods.com/affiliates/go/conversion/iframe/bg?a=12911&t=f242aa91994cce3a42c4ae55cbbeae24&s=" + ReadCookie('sessid2'));
+      document.body.appendChild(i);
+    }, 1000);
+  </script>
 </head>
 <body>
 
@@ -174,7 +212,7 @@
         <div class="offer-check">100% 60-Day Money-Back Guarantee</div>
       </div>
       <!-- BuyGoods checkout: codename alpha6u3_fun_b1 -->
-      <a href="https://buygoods.com/secure/upsell/?account_id=RAGN_ACCOUNT_ID&product_codename=alpha6u3_fun_b1&redirect=REPLACE_WITH_BASE64_THANKS_URL" class="cta-orange">YES! ADD ALPHAPOWER TO MY ORDER →</a>
+      <a href="https://buygoods.com/secure/upsell/?account_id=12911&product_codename=alp6u3_fun_b3&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvdGhhbmtzLw==" class="cta-orange">YES! ADD ALPHAPOWER TO MY ORDER →</a>
       <div class="trust-row trust-cards-row">
         <img src="images/cards.png" alt="Payment Methods">
       </div>
@@ -183,7 +221,7 @@
 
     <div class="decline" style="margin-bottom:18px;"><strong>OR</strong></div>
     <div class="decline">
-      <a href="../dw3/">No thanks, I'll pass on supporting my testosterone foundation.</a>
+      <a href="https://ragnaroak.us/funnelb3/dw3/">No thanks, I'll pass on supporting my testosterone foundation.</a>
     </div>
 
     <!-- ===== Why 6 Bottles ===== -->
@@ -221,9 +259,9 @@
 
     <!-- ===== Final Step / P.S. ===== -->
     <h2>Final Step</h2>
-    <a href="https://buygoods.com/secure/upsell/?account_id=RAGN_ACCOUNT_ID&product_codename=alpha6u3_fun_b1&redirect=REPLACE_WITH_BASE64_THANKS_URL" class="cta-orange">YES! ADD ALPHAPOWER — $162</a>
+    <a href="https://buygoods.com/secure/upsell/?account_id=12911&product_codename=alp6u3_fun_b3&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvdGhhbmtzLw==" class="cta-orange">YES! ADD ALPHAPOWER — $162</a>
     <div class="decline" style="margin-bottom:24px;">
-      <a href="../dw3/">No thanks, complete my order without it.</a>
+      <a href="https://ragnaroak.us/funnelb3/dw3/">No thanks, complete my order without it.</a>
     </div>
 
     <div class="ps-block">
@@ -251,8 +289,8 @@
     <p class="bg-footer__disclaimer">Statements found on this website have not been evaluated by the Food and Drug Administration. Products on this website are not intended to diagnose, treat, cure, or prevent any disease. If you are pregnant, nursing, taking medication, or have a medical condition, consult your physician before using our products.</p>
     <p style="text-align:center; font-size:.75rem; color:rgba(232,226,220,.45); margin: 0 0 1rem;">© Alphapower 2026. All Rights Reserved.</p>
     <span id="disclaimer"></span>
-    <!-- Replace RAGN_ACCOUNT_ID with production BuyGoods account_id -->
-    <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=RAGN_ACCOUNT_ID"></script>
+    <!-- Replace 12911 with production BuyGoods account_id -->
+    <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=12911"></script>
   </div>
 </section>
 

@@ -16,14 +16,14 @@
 
   <!--
     BuyGoods conversion + tracking scripts.
-    Replace RAGN_ACCOUNT_ID with the production BuyGoods account_id once issued.
+    Replace 12911 with the production BuyGoods account_id once issued.
     Replace product codenames (rgnr1_/rgnr3_/rgnr6_fun_b1) once issued.
   -->
   <script>
-    var mysrc = "https://tracking.buygoods.com/track/?a=RAGN_ACCOUNT_ID&firstcookie=0"
+    var mysrc = "https://tracking.buygoods.com/track/?a=12911&firstcookie=0"
       + "&tracking_redirect=&referrer=" + encodeURIComponent(document.referrer)
       + "&sessid2=" + ReadCookie('sessid2')
-      + "&product=rgnr1_fun_b1,rgnr3_fun_b1,rgnr6_fun_b1&vid1=&vid2=&vid3=&caller_url="
+      + "&product=rgn1_fun_b3,rgn2_fun_b3,rgn3_fun_b3,rgn6_fun_b3&vid1=&vid2=&vid3=&caller_url="
       + encodeURIComponent(window.location.href);
     if (typeof add_to_cart !== 'undefined') { mysrc = mysrc + '&add_to_cart=' + add_to_cart; }
     var newScript = document.createElement('script');
@@ -47,7 +47,7 @@
       var i = document.createElement("iframe");
       i.async = true;
       i.style = "display:none";
-      i.setAttribute("src", "https://buygoods.com/affiliates/go/conversion/iframe/bg?a=RAGN_ACCOUNT_ID&t=REPLACE_WITH_PIXEL_TOKEN&s=" + ReadCookie('sessid2'));
+      i.setAttribute("src", "https://buygoods.com/affiliates/go/conversion/iframe/bg?a=12911&t=f242aa91994cce3a42c4ae55cbbeae24&s=" + ReadCookie('sessid2'));
       document.body.appendChild(i);
     }, 1000);
   </script>
@@ -171,7 +171,7 @@
 
       <div class="packages-grid">
 
-        <a href="https://buygoods.com/secure/checkout.html?account_id=RAGN_ACCOUNT_ID&product_codename=rgnr1_fun_b1&redirect=REPLACE_WITH_BASE64_UP1_URL" class="pkg-card">
+        <a href="https://buygoods.com/secure/checkout.html?account_id=12911&product_codename=rgn1_fun_b3&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdXAxLTAxLw==" class="pkg-card">
           <div class="pkg-head"><h4>Basic</h4></div>
           <div class="pkg-body">
             <div class="pkg-qty">1 Bottle</div>
@@ -193,7 +193,7 @@
           </div>
         </a>
 
-        <a href="https://buygoods.com/secure/checkout.html?account_id=RAGN_ACCOUNT_ID&product_codename=rgnr6_fun_b1&redirect=REPLACE_WITH_BASE64_UP6_URL" class="pkg-card featured">
+        <a href="https://buygoods.com/secure/checkout.html?account_id=12911&product_codename=rgn6_fun_b3&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdXAxLTA2Lw==" class="pkg-card featured">
           <div class="pkg-ribbon">★ MOST POPULAR · BEST VALUE</div>
           <div class="pkg-head"><h4>Warrior Pack</h4></div>
           <div class="pkg-body">
@@ -224,7 +224,7 @@
           </div>
         </a>
 
-        <a href="https://buygoods.com/secure/checkout.html?account_id=RAGN_ACCOUNT_ID&product_codename=rgnr3_fun_b1&redirect=REPLACE_WITH_BASE64_UP3_URL" class="pkg-card">
+        <a href="https://buygoods.com/secure/checkout.html?account_id=12911&product_codename=rgn3_fun_b3&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdXAxLTAzLw==" class="pkg-card">
           <div class="pkg-head"><h4>Bundle</h4></div>
           <div class="pkg-body">
             <div class="pkg-qty">3 Bottles</div>
@@ -539,7 +539,7 @@
 
       <div class="packages-grid">
 
-        <a href="https://buygoods.com/secure/checkout.html?account_id=RAGN_ACCOUNT_ID&product_codename=rgnr1_fun_b1&redirect=REPLACE_WITH_BASE64_UP1_URL" class="pkg-card">
+        <a href="https://buygoods.com/secure/checkout.html?account_id=12911&product_codename=rgn1_fun_b3&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdXAxLTAxLw==" class="pkg-card">
           <div class="pkg-head"><h4>Basic</h4></div>
           <div class="pkg-body">
             <div class="pkg-qty">1 Bottle</div>
@@ -559,7 +559,7 @@
           </div>
         </a>
 
-        <a href="https://buygoods.com/secure/checkout.html?account_id=RAGN_ACCOUNT_ID&product_codename=rgnr6_fun_b1&redirect=REPLACE_WITH_BASE64_UP6_URL" class="pkg-card featured">
+        <a href="https://buygoods.com/secure/checkout.html?account_id=12911&product_codename=rgn6_fun_b3&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdXAxLTA2Lw==" class="pkg-card featured">
           <div class="pkg-ribbon">★ MOST POPULAR · BEST VALUE</div>
           <div class="pkg-head"><h4>Warrior Pack</h4></div>
           <div class="pkg-body">
@@ -590,7 +590,7 @@
           </div>
         </a>
 
-        <a href="https://buygoods.com/secure/checkout.html?account_id=RAGN_ACCOUNT_ID&product_codename=rgnr3_fun_b1&redirect=REPLACE_WITH_BASE64_UP3_URL" class="pkg-card">
+        <a href="https://buygoods.com/secure/checkout.html?account_id=12911&product_codename=rgn3_fun_b3&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdXAxLTAzLw==" class="pkg-card">
           <div class="pkg-head"><h4>Bundle</h4></div>
           <div class="pkg-body">
             <div class="pkg-qty">3 Bottles</div>
@@ -767,7 +767,7 @@
         Statements found on this website have not been evaluated by the Food and Drug Administration. Products on this website are not intended to diagnose, treat, cure, or prevent any disease. If you are pregnant, nursing, taking medication, or have a medical condition, consult your physician before using our products.
       </p>
       <span id="disclaimer"></span>
-      <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=RAGN_ACCOUNT_ID"></script>
+      <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=12911"></script>
     </div>
   </footer>
 

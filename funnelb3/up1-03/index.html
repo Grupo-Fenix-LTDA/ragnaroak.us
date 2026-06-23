@@ -18,14 +18,14 @@
 
   <!--
     BuyGoods tracker + conversion pixel.
-    Replace RAGN_ACCOUNT_ID with the production account_id once issued.
+    Replace 12911 with the production account_id once issued.
     Tracker products mirror the DTC funnelb3 codenames.
   -->
   <script>
-    var mysrc = "https://tracking.buygoods.com/track/?a=RAGN_ACCOUNT_ID&firstcookie=0"
+    var mysrc = "https://tracking.buygoods.com/track/?a=12911&firstcookie=0"
       + "&tracking_redirect=&referrer=" + encodeURIComponent(document.referrer)
       + "&sessid2=" + ReadCookie('sessid2')
-      + "&product=rgnr3_fun_b1,rgnr6_fun_b1&vid1=&vid2=&vid3=&caller_url="
+      + "&product=rgn6u1_2_fun_b3,rgn8d1_2_fun_b3&vid1=&vid2=&vid3=&caller_url="
       + encodeURIComponent(window.location.href);
     if (typeof add_to_cart !== 'undefined') { mysrc = mysrc + '&add_to_cart=' + add_to_cart; }
     var newScript = document.createElement('script');
@@ -49,7 +49,7 @@
       var i = document.createElement("iframe");
       i.async = true;
       i.style = "display:none";
-      i.setAttribute("src", "https://buygoods.com/affiliates/go/conversion/iframe/bg?a=RAGN_ACCOUNT_ID&t=REPLACE_WITH_PIXEL_TOKEN&s=" + ReadCookie('sessid2'));
+      i.setAttribute("src", "https://buygoods.com/affiliates/go/conversion/iframe/bg?a=12911&t=f242aa91994cce3a42c4ae55cbbeae24&s=" + ReadCookie('sessid2'));
       document.body.appendChild(i);
     }, 1000);
   </script>
@@ -131,7 +131,7 @@
         </div>
 
         <!-- BuyGoods upsell accept URL (1-click upsell). Confirm rgnr6u1_1_fun_b1 codename with dev. -->
-        <a href="https://buygoods.com/secure/upsell/?account_id=RAGN_ACCOUNT_ID&product_codename=rgnr6u1_2_fun_b1&redirect=REPLACE_WITH_BASE64_UP2_URL" class="cta-orange accept-link">YES! UPGRADE MY ORDER →</a>
+        <a href="https://buygoods.com/secure/upsell/?account_id=12911&product_codename=rgn6u1_2_fun_b3&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdXAyLw==" class="cta-orange accept-link">YES! UPGRADE MY ORDER →</a>
 
         <div class="trust-badges">
           <div class="trust-row">
@@ -216,7 +216,7 @@
           <div class="offer-check">$49/bottle — locked-in price</div>
           <div class="offer-check">Free shipping included</div>
         </div>
-        <a href="https://buygoods.com/secure/upsell/?account_id=RAGN_ACCOUNT_ID&product_codename=rgnr6u1_2_fun_b1&redirect=REPLACE_WITH_BASE64_UP2_URL" class="cta-orange accept-link">YES! UPGRADE MY ORDER →</a>
+        <a href="https://buygoods.com/secure/upsell/?account_id=12911&product_codename=rgn6u1_2_fun_b3&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdXAyLw==" class="cta-orange accept-link">YES! UPGRADE MY ORDER →</a>
 
         <div class="trust-badges">
           <div class="trust-row">
@@ -267,9 +267,9 @@
         </div>
       </div>
       <!-- BuyGoods downsell URL. Confirm rgnr6d1_1_fun_b1 codename with dev. -->
-      <a href="https://buygoods.com/secure/upsell/?account_id=RAGN_ACCOUNT_ID&product_codename=rgnr8d1_2_fun_b1&redirect=REPLACE_WITH_BASE64_UP2_URL" class="popup-cta accept-link">YES! I'LL TAKE THE BETTER DEAL →</a>
+      <a href="https://buygoods.com/secure/upsell/?account_id=12911&product_codename=rgn8d1_2_fun_b3&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdXAyLw==" class="popup-cta accept-link">YES! I'LL TAKE THE BETTER DEAL →</a>
     </div>
-    <a href="../up2/" class="popup-decline-btn accept-link-downsell">No thanks, just confirm my order.</a>
+    <a href="https://ragnaroak.us/funnelb3/up2/" class="popup-decline-btn accept-link-downsell">No thanks, just confirm my order.</a>
   </div>
 </div>
 
@@ -308,8 +308,8 @@
     <p class="bg-footer__disclaimer">Statements on this website have not been evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or prevent any disease. Always consult with your healthcare provider before starting any new supplement regimen. The website's content and the product for sale is based upon the author's opinion and is provided solely on an "AS IS" and "AS AVAILABLE" basis.</p>
     <p style="text-align:center; font-size:.75rem; color:rgba(232, 226, 220, .45); margin: 0 0 1rem;">© RagnarOak 2026. All Rights Reserved.</p>
     <span id="disclaimer"></span>
-    <!-- BuyGoods compliance disclaimer block (auto-injects logo + legal copy). Replace RAGN_ACCOUNT_ID. -->
-    <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=RAGN_ACCOUNT_ID"></script>
+    <!-- BuyGoods compliance disclaimer block (auto-injects logo + legal copy). Replace 12911. -->
+    <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=12911"></script>
   </div>
 </section>
 

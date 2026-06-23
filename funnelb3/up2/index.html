@@ -15,7 +15,45 @@
 <link rel="icon" type="image/png" href="images/prostabliss-3-2.png">
 
 <!-- BuyGoods conversion pixel (UP1 conversion confirmation) -->
-<iframe src="https://display.buygoods.com/cf/iframe.aspx?t=REPLACE_WITH_PIXEL_TOKEN" frameborder="0" scrolling="no" width="1" height="1" style="border:0;position:absolute;left:-9999px;top:-9999px;"></iframe>
+<iframe src="https://display.buygoods.com/cf/iframe.aspx?t=f242aa91994cce3a42c4ae55cbbeae24" frameborder="0" scrolling="no" width="1" height="1" style="border:0;position:absolute;left:-9999px;top:-9999px;"></iframe>
+
+  <!--
+    BuyGoods tracker + conversion pixel.
+    Replace 12911 with the production account_id once issued.
+    Tracker products mirror the DTC funnelb3 codenames.
+  -->
+  <script>
+    var mysrc = "https://tracking.buygoods.com/track/?a=12911&firstcookie=0"
+      + "&tracking_redirect=&referrer=" + encodeURIComponent(document.referrer)
+      + "&sessid2=" + ReadCookie('sessid2')
+      + "&product=pro4u2_fun_b3,pro5u2_fun_b3,pro6u2_fun_b3&vid1=&vid2=&vid3=&caller_url="
+      + encodeURIComponent(window.location.href);
+    if (typeof add_to_cart !== 'undefined') { mysrc = mysrc + '&add_to_cart=' + add_to_cart; }
+    var newScript = document.createElement('script');
+    newScript.type = 'text/javascript';
+    newScript.defer = true;
+    newScript.src = mysrc;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(newScript, s);
+    function ReadCookie(name) {
+      name += '=';
+      var parts = document.cookie.split(/;\s*/);
+      for (var i = 0; i < parts.length; i++) {
+        var part = parts[i];
+        if (part.indexOf(name) == 0) return part.substring(name.length);
+      }
+      return '';
+    }
+  </script>
+  <script type="text/javascript">
+    setTimeout(function () {
+      var i = document.createElement("iframe");
+      i.async = true;
+      i.style = "display:none";
+      i.setAttribute("src", "https://buygoods.com/affiliates/go/conversion/iframe/bg?a=12911&t=f242aa91994cce3a42c4ae55cbbeae24&s=" + ReadCookie('sessid2'));
+      document.body.appendChild(i);
+    }, 1000);
+  </script>
 </head>
 <body>
 
@@ -70,7 +108,7 @@
           <div class="offer-check">Free shipping included</div>
         </div>
         <!-- BuyGoods checkout: codename prst4u2_fun_b1 (2 paid + 2 free = 4 total) -->
-        <a href="https://buygoods.com/secure/upsell/?account_id=RAGN_ACCOUNT_ID&product_codename=prst4u2_fun_b1&redirect=REPLACE_WITH_BASE64_NEXT_URL" class="cta-orange">BUY NOW →</a>
+        <a href="https://buygoods.com/secure/upsell/?account_id=12911&product_codename=pro4u2_fun_b3&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdXAzLw==" class="cta-orange">BUY NOW →</a>
       </div>
     </div>
 
@@ -94,7 +132,7 @@
           <div class="offer-check">Free shipping included</div>
         </div>
         <!-- BuyGoods checkout: codename prst6u2_fun_b1 (4 paid + 2 free = 6 total) -->
-        <a href="https://buygoods.com/secure/upsell/?account_id=RAGN_ACCOUNT_ID&product_codename=prst6u2_fun_b1&redirect=REPLACE_WITH_BASE64_NEXT_URL" class="cta-orange">BUY NOW →</a>
+        <a href="https://buygoods.com/secure/upsell/?account_id=12911&product_codename=pro6u2_fun_b3&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdXAzLw==" class="cta-orange">BUY NOW →</a>
       </div>
     </div>
 
@@ -118,7 +156,7 @@
           <div class="offer-check">Free shipping included</div>
         </div>
         <!-- BuyGoods checkout: codename prst5u2_fun_b1 (3 paid + 2 free = 5 total) -->
-        <a href="https://buygoods.com/secure/upsell/?account_id=RAGN_ACCOUNT_ID&product_codename=prst5u2_fun_b1&redirect=REPLACE_WITH_BASE64_NEXT_URL" class="cta-orange">BUY NOW →</a>
+        <a href="https://buygoods.com/secure/upsell/?account_id=12911&product_codename=prst5u2_fun_b1&redirect=REPLACE_WITH_BASE64_NEXT_URL" class="cta-orange">BUY NOW →</a>
       </div>
     </div>
 
@@ -138,7 +176,7 @@
 
   <!-- Decline → downsell page -->
   <div class="decline">
-    <a href="../dw2/">No Thanks, Continue To Order Confirmation.</a>
+    <a href="https://ragnaroak.us/funnelb3/dw2/">No Thanks, Continue To Order Confirmation.</a>
   </div>
 </div>
 
@@ -154,8 +192,8 @@
     <p class="bg-footer__disclaimer">Statements on this website have not been evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or prevent any disease. Always consult with your healthcare provider before starting any new supplement regimen. The website's content and the product for sale is based upon the author's opinion and is provided solely on an "AS IS" and "AS AVAILABLE" basis.</p>
     <p style="text-align:center; font-size:.75rem; color:rgba(232,226,220,.45); margin: 0 0 1rem;">© RagnarOak 2026. All Rights Reserved.</p>
     <span id="disclaimer"></span>
-    <!-- Replace RAGN_ACCOUNT_ID with production BuyGoods account_id -->
-    <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=RAGN_ACCOUNT_ID"></script>
+    <!-- Replace 12911 with production BuyGoods account_id -->
+    <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=12911"></script>
   </div>
 </section>
 

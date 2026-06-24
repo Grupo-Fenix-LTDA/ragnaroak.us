@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="ia_archiver" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>RagnarOak | Wellness Box</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- BuyGoods Tracking — substitua RAGN_ACCOUNT_ID e product codenames antes de publicar -->
+  <script>
+    function ReadCookie(name) {
+      name += '=';
+      var parts = document.cookie.split(/;\s*/);
+      for (var i = 0; i < parts.length; i++) {
+        var part = parts[i];
+        if (part.indexOf(name) == 0) return part.substring(name.length);
+      }
+      return '';
+    }
+    var mysrc = "https://tracking.buygoods.com/track/?a=RAGN_ACCOUNT_ID&firstcookie=0"
+      + "&tracking_redirect=&referrer=" + encodeURIComponent(document.referrer)
+      + "&sessid2=" + ReadCookie('sessid2')
+      + "&product=well1&vid1=&vid2=&vid3=&caller_url=" + encodeURIComponent(window.location.href);
+    if (typeof add_to_cart !== 'undefined') { mysrc = mysrc + '&add_to_cart=' + add_to_cart; }
+    var newScript = document.createElement('script');
+    newScript.type = 'text/javascript';
+    newScript.defer = true;
+    newScript.src = mysrc;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(newScript, s);
+  </script>
+
+  <!-- BuyGoods Conversion Iframe -->
+  <script>
+    setTimeout(function () {
+      var i = document.createElement("iframe");
+      i.async = true;
+      i.style = "display:none";
+      i.setAttribute("src", "https://buygoods.com/affiliates/go/conversion/iframe/bg?a=RAGN_ACCOUNT_ID&t=REPLACE_WITH_PIXEL_TOKEN&s=" + ReadCookie('sessid2'));
+      document.body.appendChild(i);
+    }, 1000);
+  </script>
+</head>
+<body>
+
+<!-- ── STICKY URGENCY BAR ── -->
+<div class="sticky-bar">
+  ⚠️ <strong>VIP Offer Expires In:</strong>&nbsp;<span id="timer">29:54</span>&nbsp;· This page will not be shown again
+</div>
+
+<!-- ── BRAND BAR ── -->
+<div class="brand-bar">
+  <div class="logo">
+    <span>RAGNAR</span>
+    <span class="thunder" aria-hidden="true">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M13 4 L6 14 L11 14 L11 20 L18 10 L13 10 Z" fill="currentColor"/>
+      </svg>
+    </span>
+    <span>AK</span>
+  </div>
+  <div class="steps">
+    <span class="step done">Order Approved</span>
+    <span class="divider-s">—</span>
+    <span class="step done">Product Options</span>
+    <span class="divider-s">—</span>
+    <span class="step done">Final Confirmation</span>
+  </div>
+</div>
+
+<!-- ── HERO ── -->
+<div class="hero">
+  <span class="hero-badge">Congratulations! You Now Qualify</span>
+  <h1>Your One-Time<br><em>Wellness Box</em> Upgrade</h1>
+  <p class="hero-sub">Multiply your RagnarOak results with the complete male performance kit — virility, lean drive, and clean fuel, shipped to your door today</p>
+  <div class="trust-row">
+    <span>60-Day Money Back</span>
+    <span>First Box $29.95</span>
+    <span>Cancel Anytime</span>
+    <span>93% Satisfaction Rate</span>
+  </div>
+</div>
+
+<!-- ── OFFER CARD ── -->
+<div class="offer-zone animate-on-scroll">
+  <div class="offer-card">
+    <div class="offer-card-header">🛡️ Your Exclusive <span>VIP Wellness Box</span> Offer</div>
+    <div class="offer-card-body">
+      <h2>Yes! Send Me My First<br><span>Wellness Box</span></h2>
+
+      <div class="price-display">
+        <div class="price-was">
+          <div class="label">Regular Value</div>
+          <div class="amount">$620.75</div>
+        </div>
+        <div class="price-arrow" style="font-size:32px">→</div>
+        <div class="price-now">
+          <div class="label">Today Only</div>
+          <div class="amount">$29.95</div>
+          <div class="sub">Your Exclusive Intro Price</div>
+        </div>
+      </div>
+
+      <!-- ── Gate checkbox ── -->
+      <input type="checkbox" id="offerGate" class="gate-hidden">
+      <label for="offerGate" class="gate-label-block">
+        <span class="gate-custom-check">
+          <svg class="gate-check-svg" viewBox="0 0 24 24" fill="none" stroke="#0a0608" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </span>
+        <span class="offer-desc">
+          <strong>Yes! Send Me My First RagnarOak Wellness Box!</strong>
+          By accepting this offer, you agree to receive your first <strong>RagnarOak Wellness Box (all 3 items)</strong> at a one-time Intro Price of <strong>$29.95.</strong> If after 30 days you choose to continue, you will <strong>NEVER pay the regular rate of $620.75</strong> — you'll receive a discounted rate of just <strong>$169 + $29.95 shipping per month</strong> for all 3 Wellness Box items. Cancel anytime, hassle-free.
+        </span>
+      </label>
+
+      <a href="#CHECKOUT_URL" class="cta-btn">
+        Yes, Send Me My Wellness Box
+        <small>For Just $29.95 Today · Cancel anytime after 30 days</small>
+      </a>
+      <div class="cards-row">
+        <img src="images/cards.png" alt="Visa, Mastercard, Amex, PayPal, Discover" style="max-width:220px;width:60%">
+      </div>
+      <a href="#DECLINE_URL" class="no-thanks js-no-thanks">No thanks, Magnus. I'll pass on stacking my male performance results.</a>
+    </div>
+    <div class="guarantee-section">
+      <img src="images/60days.png" alt="60-Day Money Back Guarantee" class="guarantee-image">
+      <div class="guarantee-title">100% Satisfaction<br>60-Day Money Back Guarantee</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── PROOF BAR ── -->
+<div class="proof-bar">
+  <strong>93% of Men</strong> report faster, more complete performance results with the Wellness Box
+</div>
+
+<!-- ── MAIN CONTENT SECTION ── -->
+<div class="section">
+  <div class="section-label">What's Inside</div>
+  <h2 class="section-title">Introducing the <em>RagnarOak</em> Wellness Box<br>
+    <small style="font-size:60%;color:var(--gray);font-family:'Inter',sans-serif;font-weight:400">(Worth $620.75) — Yours Today at a Special Offer</small>
+  </h2>
+  <p class="section-intro">Our team of formulators built this <strong>complete male performance system</strong> of 3 elite formulas — packed with virility-supporting, fat-burning, and clean-energy ingredients to <strong>ACCELERATE every RagnarOak result</strong> and stack the three pillars of total male performance into one decisive move.</p>
+
+  <div class="box-img-wrap animate-on-scroll">
+    <img src="images/box-ragnaroak.png" alt="RagnarOak Wellness Box — ErecPower, BurnPower, Glycovit">
+  </div>
+
+  <!-- ── DR. MAGNUS VAHL QUOTE ── -->
+  <div class="dr-quote animate-on-scroll">
+    <img src="images/expert.jpg" alt="Dr. Magnus Vahl" class="dr-avatar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="dr-avatar-placeholder" style="display:none">MV</div>
+    <div>
+      <div class="dr-name">Dr. Magnus Vahl</div>
+      <div class="dr-title">Men's Performance Physician · RagnarOak Medical Advisory</div>
+      <div class="dr-text">"When a man's vitality is on the line, half-measures don't cut it. That's exactly why I built the RagnarOak Wellness Box — to stack the three pillars of male performance into one decisive move: virility, lean drive, and clean fuel. Three formulas. One transformation. Built for the man who refuses to slow down."</div>
+    </div>
+  </div>
+
+  <!-- ── ITEM #1 — ERECPOWER ── -->
+  <div class="item-number">
+    <div class="item-num-badge" style="background:var(--blood-hot)">1</div>
+    <div>
+      <div class="item-num-label" style="color:var(--blood-bright)">Item #1 — Male Vitality &amp; Sexual Performance</div>
+      <div class="item-num-action">Reclaim Your Sexual Edge With:</div>
+    </div>
+  </div>
+  <div class="product-card card-red">
+    <div class="product-card-inner">
+      <div class="product-img-wrap">
+        <img src="images/erecpower.png" alt="ErecPower">
+      </div>
+      <div class="product-info">
+        <div class="rrp-tag">Value <s>$249.95</s></div>
+        <h3>ErecPower</h3>
+        <div class="product-tagline" style="color:var(--blood-bright)">Male Enhancement Capsules · 30 Capsules</div>
+        <p class="product-desc">When stamina fades, circulation falters, and confidence dips, the entire RagnarOak system fights uphill. ErecPower amplifies the same botanical pathway RagnarOak unlocks — delivering a clinically-backed blend of Muira Puama, Maca Root, Catuaba and L-Arginine to support healthy blood flow, sustained drive, and the firm, dependable response you used to take for granted.</p>
+        <div class="ingredient-highlight" style="border-color:var(--blood-bright);background:rgba(194,37,62,0.10);color:var(--blood-bright)"><strong>600mg Muira Puama + L-Arginine Complex</strong> — fuels the nitric-oxide pathway behind healthy circulation, stamina, and on-demand response</div>
+        <div class="results-pill" style="background:var(--blood-hot)">⚡ 5x to 9x stronger response &amp; stamina</div>
+        <div class="testimonial">
+          <div class="star-row">★★★★★</div>
+          <div class="testimonial-text">Stacking ErecPower with my RagnarOak was a game-changer. Within two weeks my confidence in the bedroom came back — and the firmness and stamina kept getting better. My wife noticed before I even said anything.</div>
+          <div class="testimonial-author">— Daniel R, Verified Customer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ITEM #2 — BURNPOWER ── -->
+  <div class="item-number">
+    <div class="item-num-badge" style="background:var(--ember-deep)">2</div>
+    <div>
+      <div class="item-num-label" style="color:var(--ember)">Item #2 — Lean Physique &amp; Fat Burning</div>
+      <div class="item-num-action">Strip Belly Fat &amp; Sharpen Your Frame With:</div>
+    </div>
+  </div>
+  <div class="product-card card-ember">
+    <div class="product-card-inner">
+      <div class="product-img-wrap">
+        <img src="images/burnpower.png" alt="BurnPower">
+      </div>
+      <div class="product-info">
+        <div class="rrp-tag">Value <s>$199.95</s></div>
+        <h3>BurnPower</h3>
+        <div class="product-tagline" style="color:var(--ember)">Thermogenic Weight Loss Support · 60 Capsules</div>
+        <p class="product-desc">Stubborn male belly fat is a testosterone-killer — and the silent reason vitality formulas underperform. BurnPower's thermogenic stack of Green Tea EGCG, Cayenne, L-Carnitine and Capsimax fires up your metabolic rate, mobilizes stored fat for fuel, and helps strip the abdominal weight that quietly suppresses the hormones driving every other RagnarOak benefit.</p>
+        <div class="ingredient-highlight" style="border-color:var(--ember);background:rgba(255,90,60,0.10);color:var(--ember)"><strong>400mg Capsimax + EGCG Thermogenic Blend</strong> — clinically shown to raise resting metabolic rate and accelerate fat oxidation in men</div>
+        <div class="results-pill" style="background:var(--ember-deep)">⚡ 4x to 7x faster fat burning</div>
+        <div class="testimonial">
+          <div class="star-row">★★★★★</div>
+          <div class="testimonial-text">I'd hit a plateau for two years no matter what I tried. BurnPower cracked it. Six weeks in, my belt is two notches tighter, my energy in the gym is wild, and the way I look in the mirror finally matches how I feel on RagnarOak.</div>
+          <div class="testimonial-author">— Marcus J, Verified Customer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ITEM #3 — GLYCOVIT ── -->
+  <div class="item-number">
+    <div class="item-num-badge" style="background:var(--rune-gold-dim)">3</div>
+    <div>
+      <div class="item-num-label" style="color:var(--rune-gold)">Item #3 — Sustained Energy &amp; Mental Edge</div>
+      <div class="item-num-action">Power Your Day With Clean Ketone Fuel:</div>
+    </div>
+  </div>
+  <div class="product-card card-gold">
+    <div class="product-card-inner">
+      <div class="product-img-wrap">
+        <img src="images/glycovit.png" alt="Glycovit">
+      </div>
+      <div class="product-info">
+        <div class="rrp-tag">Value <s>$170.85</s></div>
+        <h3>Glycovit</h3>
+        <div class="product-tagline" style="color:var(--rune-gold)">Premium Ketone Liquid Drops · 2 fl oz / 30 ml</div>
+        <p class="product-desc">The afternoon crash. The brain fog. The energy dips that wreck your focus, your workouts, and yes — your performance at night. Glycovit's premium BHB ketone drops give your body a clean, fast-absorbing fuel source that bypasses the glucose rollercoaster. Steady physical energy, razor-sharp mental clarity, and the metabolic flexibility every man needs to perform at full power, all day long.</p>
+        <div class="ingredient-highlight" style="border-color:var(--rune-gold);background:rgba(200,168,106,0.10);color:var(--rune-gold)"><strong>1,200mg BHB + C8 MCT Liquid Complex</strong> — bypasses the carb crash with rapid-absorbing ketone fuel for sustained energy and cognitive performance</div>
+        <div class="results-pill" style="background:var(--rune-gold-dim)">⚡ 3x to 6x cleaner mental &amp; physical energy</div>
+        <div class="testimonial">
+          <div class="star-row">★★★★★</div>
+          <div class="testimonial-text">A few drops of Glycovit in the morning and the 3pm crash is gone. My focus at work, energy at the gym, drive at night — all up. This is the missing piece I didn't know I needed.</div>
+          <div class="testimonial-author">— Anthony P, Verified Customer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── BOX SUMMARY ── -->
+  <div class="box-summary animate-on-scroll">
+    <h3>Everything Inside Your <span>Wellness Box</span></h3>
+    <div class="box-items-list">
+      <div class="box-item">
+        <img src="images/erecpower.png" alt="ErecPower" class="box-item-thumb">
+        <div class="box-item-content">
+          <span class="box-item-badge" data-cat="virility">Virility</span>
+          <div class="box-item-row">
+            <div class="box-item-name">ErecPower</div>
+            <div class="box-item-value"><s>$249.95</s> Included</div>
+          </div>
+        </div>
+      </div>
+      <div class="box-item">
+        <img src="images/burnpower.png" alt="BurnPower" class="box-item-thumb">
+        <div class="box-item-content">
+          <span class="box-item-badge" data-cat="lean">Lean Drive</span>
+          <div class="box-item-row">
+            <div class="box-item-name">BurnPower</div>
+            <div class="box-item-value"><s>$199.95</s> Included</div>
+          </div>
+        </div>
+      </div>
+      <div class="box-item">
+        <img src="images/glycovit.png" alt="Glycovit" class="box-item-thumb">
+        <div class="box-item-content">
+          <span class="box-item-badge" data-cat="energy">Clean Fuel</span>
+          <div class="box-item-row">
+            <div class="box-item-name">Glycovit Ketone Drops</div>
+            <div class="box-item-value"><s>$170.85</s> Included</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-total">
+      <div class="box-total-label">Total Paid Today</div>
+      <div class="box-total-price"><s>$620.75</s> $29.95</div>
+    </div>
+  </div>
+
+  <!-- ── WARNING BLOCK ── -->
+  <div class="warning-block">
+    <div style="font-size:32px;margin-bottom:8px">⚠️</div>
+    <h4>WARNING: Limited Stock Available</h4>
+    <p>We only have a <strong>limited number</strong> of RagnarOak Wellness Boxes available at this intro price. After they're gone, the regular rate of <strong>$620.75</strong> will apply. If you decline this offer right now, you will <strong>not</strong> be able to come back to this page.</p>
+  </div>
+
+  <!-- ── TESTIMONIALS GRID ── -->
+  <div class="testimonials-grid">
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <div class="quote">"I almost passed on the Wellness Box thinking RagnarOak alone would be enough — best decision I made was clicking yes. Energy, drive, lean strength, all dialed in together. Different man in 60 days."</div>
+      <div class="author">— James T, Verified Customer</div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <div class="quote">"The combo of all 3 hits different. I don't crash, I burn fat without effort, and the bedroom side of things is back like I was 25. My wife asked what I did. I told her: RagnarOak Wellness Box."</div>
+      <div class="author">— Lance K, Verified Customer</div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <div class="quote">"From the first week I could tell. Stronger response, sharper focus, leaner midsection. If you're already on RagnarOak, the Wellness Box is the only logical next step."</div>
+      <div class="author">— Ivan P, Verified Customer</div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <div class="quote">"Results were almost instant — clean energy, stable stamina, confidence back to where it used to be. If you're on the fence, just get it. You won't regret it."</div>
+      <div class="author">— Liam H, Verified Customer</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── BOTTOM CTA ── -->
+<div class="bottom-cta">
+  <h2>Ready to <em>Accelerate</em><br>Your Transformation?</h2>
+  <p>Starting Today for Just $29.95</p>
+
+  <!-- ── Gate checkbox ── -->
+  <input type="checkbox" id="bottomGate" class="gate-hidden">
+  <label for="bottomGate" class="gate-label-block" style="max-width:540px;margin-left:auto;margin-right:auto;background:rgba(255,255,255,.04);border-color:var(--rune-gold-dim);">
+    <span class="gate-custom-check">
+      <svg class="gate-check-svg" viewBox="0 0 24 24" fill="none" stroke="#0a0608" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+    </span>
+    <span class="offer-desc" style="color:rgba(232,226,220,.78);">
+      <strong style="color:#fff;">Yes, Magnus! Send Me My First RagnarOak Wellness Box!</strong>
+      I agree to receive all 3 premium RagnarOak performance formulas at a one-time <b>Intro Price of $29.95.</b> If I choose to continue after 30 days, I'll pay only $169 + $29.95/month — never the full $620.75. I can cancel anytime.
+    </span>
+  </label>
+
+  <a href="#CHECKOUT_URL" class="cta-green">
+    Yes, Send Me My Wellness Box
+    <small>Starting Today for Just $29.95 · 60-Day Money-Back Guarantee</small>
+  </a>
+  <div class="trust-icons">
+    <span>Secure Checkout</span>
+    <span>60-Day Guarantee</span>
+    <span>Fast Delivery</span>
+    <span>Cancel Anytime</span>
+  </div>
+  <a href="#DECLINE_URL" class="decline-link js-no-thanks">No thanks. I understand I won't be able to get my first RagnarOak Wellness Box anywhere else. I'll pass on this offer.</a>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://ragnaroak.us/support">Support</a>
+      <a href="https://ragnaroak.us/support/">Refund</a>
+      <a href="https://ragnaroak.us/terms">Terms</a>
+      <a href="https://ragnaroak.us/privacy">Privacy</a>
+    </div>
+    <div class="footer-fda">
+      <b>Statements found on this website have not been evaluated by the Food and Drug Administration.</b> Products on this website are not intended to diagnose, treat, cure, or prevent any disease. If you are pregnant, nursing, taking medication, or have a medical condition, consult your physician before using our products.
+    </div>
+    <p class="footer-fda">Testimonials, case studies, and examples found on this page are results that have been forwarded to us by users of RagnarOak and related products, and are not intended to represent or guarantee that anyone will achieve the same or similar results.</p>
+    <span id="disclaimer"></span>
+    <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=RAGN_ACCOUNT_ID"></script>
+    <div style="font-size:12px;color:var(--steel-faint);margin-top:4px">© 2025 RagnarOak Research. All Rights Reserved.</div>
+  </div>
+</footer>
+
+
+<!-- ════════════════════════════════════════
+     LAST CHANCE MODAL — RagnarOak Wellness Box
+     ════════════════════════════════════════ -->
+<div class="lc-overlay" id="lcOverlay">
+  <div class="lc-modal-wrap">
+    <button class="lc-close" id="lcClose" aria-label="Close">&times;</button>
+    <div class="lc-modal">
+
+      <div class="lc-timer-bar">
+        ⚠️ VIP Offer Expires in <span id="lcTimer">29:54</span>
+      </div>
+
+      <div class="lc-body">
+        <div class="lc-title">ARE YOU SURE?</div>
+
+        <div class="lc-subtitle">
+          If you leave this page, you'll lose your <u>only chance</u> to get your
+          <u>first RagnarOak Wellness Box (all 3 items)</u> — at a one-time Intro Price of
+          <u>$29.95!</u>
+        </div>
+
+        <div class="lc-img-wrap">
+          <img src="images/box-ragnaroak.png" alt="RagnarOak Wellness Box">
+        </div>
+
+        <div class="lc-instruction">
+          <b>Check the box and hit the button below</b> to lock in your
+          RagnarOak Wellness Box while supplies last!
+        </div>
+
+        <div class="lc-checkbox-card" id="lcCheckCard">
+          <div class="lc-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0a0608" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div class="lc-check-text">
+            <h4>Yes! Send Me My First RagnarOak Wellness Box!</h4>
+            <p>By checking this box, you agree to receive your first RagnarOak Wellness Box (all 3 items) at a one-time Intro Price of $29.95. If after 30 days you choose to continue with your Wellness Box membership, you will never pay the regular rate of $620.75 and will receive a discounted rate of just $169 + $29.95 shipping per month for all 3 Wellness Box items for as long as you desire. If you wish to end your membership at any time, just let us know.</p>
+          </div>
+        </div>
+
+        <a href="#CHECKOUT_URL" class="lc-cta" id="lcCta">
+          Yes! Send Me My RagnarOak Wellness Box!
+          <small>For Just $29.95 Today · Cancel Anytime · 60-Day Money Back</small>
+        </a>
+
+        <div class="lc-cards">
+          <img src="images/cards.png" alt="Payment cards">
+        </div>
+
+        <div class="lc-guarantee">
+          <img src="images/60days.png" alt="60-Day Money Back Guarantee">
+        </div>
+
+        <a class="lc-decline" id="lcDecline">
+          No thanks. I understand I'm giving up my RagnarOak Wellness Box and this offer won't be available again.
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+
+<script>
+(function () {
+  /* ── Modal trigger: all "no thanks" links ── */
+  var noThanksLinks = document.querySelectorAll('.js-no-thanks');
+  noThanksLinks.forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.getElementById('lcOverlay').classList.add('lc-active');
+    });
+  });
+
+  /* ── Modal close ── */
+  var overlay = document.getElementById('lcOverlay');
+  document.getElementById('lcClose').addEventListener('click', function () {
+    overlay.classList.remove('lc-active');
+  });
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) overlay.classList.remove('lc-active');
+  });
+
+  /* ── Modal checkbox toggle ── */
+  var lcCheckCard = document.getElementById('lcCheckCard');
+  if (lcCheckCard) {
+    lcCheckCard.addEventListener('click', function () {
+      lcCheckCard.classList.toggle('lc-checked');
+    });
+  }
+
+  /* ── Modal decline closes overlay and follows DECLINE_URL ── */
+  document.getElementById('lcDecline').addEventListener('click', function () {
+    overlay.classList.remove('lc-active');
+    window.location.href = '#DECLINE_URL';
+  });
+
+  /* ── Sync lcTimer with main page timer ── */
+  var lcTimerEl = document.getElementById('lcTimer');
+  var mainTimerEl = document.getElementById('timer');
+  if (lcTimerEl && mainTimerEl) {
+    var syncLcTimer = function () {
+      lcTimerEl.textContent = mainTimerEl.textContent;
+      setTimeout(syncLcTimer, 1000);
+    };
+    syncLcTimer();
+  }
+})();
+</script>
+
+</body>
+</html>

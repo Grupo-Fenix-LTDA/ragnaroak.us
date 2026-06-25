@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 
-  <!-- BuyGoods Tracking — substitua RAGN_ACCOUNT_ID e product codenames antes de publicar -->
+  <!-- BuyGoods Tracking — substitua 12911 e product codenames antes de publicar -->
   <script>
     function ReadCookie(name) {
       name += '=';
@@ -22,7 +22,7 @@
       }
       return '';
     }
-    var mysrc = "https://tracking.buygoods.com/track/?a=RAGN_ACCOUNT_ID&firstcookie=0"
+    var mysrc = "https://tracking.buygoods.com/track/?a=12911&firstcookie=0"
       + "&tracking_redirect=&referrer=" + encodeURIComponent(document.referrer)
       + "&sessid2=" + ReadCookie('sessid2')
       + "&product=well1&vid1=&vid2=&vid3=&caller_url=" + encodeURIComponent(window.location.href);
@@ -41,7 +41,7 @@
       var i = document.createElement("iframe");
       i.async = true;
       i.style = "display:none";
-      i.setAttribute("src", "https://buygoods.com/affiliates/go/conversion/iframe/bg?a=RAGN_ACCOUNT_ID&t=REPLACE_WITH_PIXEL_TOKEN&s=" + ReadCookie('sessid2'));
+      i.setAttribute("src", "https://buygoods.com/affiliates/go/conversion/iframe/bg?a=12911&t=REPLACE_WITH_PIXEL_TOKEN&s=" + ReadCookie('sessid2'));
       document.body.appendChild(i);
     }, 1000);
   </script>
@@ -121,14 +121,14 @@
         </span>
       </label>
 
-      <a href="#CHECKOUT_URL" class="cta-btn">
+      <a href="https://buygoods.com/secure/upsell/?account_id=12911&product_codename=WELLRAGNAR&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdGhhbmtzLw==" class="cta-btn">
         Yes, Send Me My Wellness Box
         <small>For Just $29.95 Today · Cancel anytime after 30 days</small>
       </a>
       <div class="cards-row">
         <img src="images/cards.png" alt="Visa, Mastercard, Amex, PayPal, Discover" style="max-width:220px;width:60%">
       </div>
-      <a href="#DECLINE_URL" class="no-thanks js-no-thanks">No thanks, Magnus. I'll pass on stacking my male performance results.</a>
+      <a href="https://buygoods.com/secure/upsell/?account_id=12911&product_codename=WELLRAGNAR&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdGhhbmtzLw==" class="no-thanks js-no-thanks">No thanks, Magnus. I'll pass on stacking my male performance results.</a>
     </div>
     <div class="guarantee-section">
       <img src="images/60days.png" alt="60-Day Money Back Guarantee" class="guarantee-image">
@@ -344,7 +344,7 @@
     </span>
   </label>
 
-  <a href="#CHECKOUT_URL" class="cta-green">
+  <a href="https://buygoods.com/secure/upsell/?account_id=12911&product_codename=WELLRAGNAR&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdGhhbmtzLw==" class="cta-green">
     Yes, Send Me My Wellness Box
     <small>Starting Today for Just $29.95 · 60-Day Money-Back Guarantee</small>
   </a>
@@ -354,7 +354,7 @@
     <span>Fast Delivery</span>
     <span>Cancel Anytime</span>
   </div>
-  <a href="#DECLINE_URL" class="decline-link js-no-thanks">No thanks. I understand I won't be able to get my first RagnarOak Wellness Box anywhere else. I'll pass on this offer.</a>
+  <a href="https://buygoods.com/secure/upsell/?account_id=12911&product_codename=WELLRAGNAR&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdGhhbmtzLw==" class="decline-link js-no-thanks">No thanks. I understand I won't be able to get my first RagnarOak Wellness Box anywhere else. I'll pass on this offer.</a>
 </div>
 
 <!-- ── FOOTER ── -->
@@ -371,7 +371,7 @@
     </div>
     <p class="footer-fda">Testimonials, case studies, and examples found on this page are results that have been forwarded to us by users of RagnarOak and related products, and are not intended to represent or guarantee that anyone will achieve the same or similar results.</p>
     <span id="disclaimer"></span>
-    <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=RAGN_ACCOUNT_ID"></script>
+    <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=12911"></script>
     <div style="font-size:12px;color:var(--steel-faint);margin-top:4px">© 2025 RagnarOak Research. All Rights Reserved.</div>
   </div>
 </footer>
@@ -419,7 +419,7 @@
           </div>
         </div>
 
-        <a href="#CHECKOUT_URL" class="lc-cta" id="lcCta">
+        <a href="https://buygoods.com/secure/upsell/?account_id=12911&product_codename=WELLRAGNAR&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdGhhbmtzLw==" class="lc-cta" id="lcCta">
           Yes! Send Me My RagnarOak Wellness Box!
           <small>For Just $29.95 Today · Cancel Anytime · 60-Day Money Back</small>
         </a>
@@ -474,7 +474,7 @@
   /* ── Modal decline closes overlay and follows DECLINE_URL ── */
   document.getElementById('lcDecline').addEventListener('click', function () {
     overlay.classList.remove('lc-active');
-    window.location.href = '#DECLINE_URL';
+    window.location.href = 'https://buygoods.com/secure/upsell/?account_id=12911&product_codename=WELLRAGNAR&redirect=aHR0cHM6Ly9yYWduYXJvYWsudXMvZnVubmVsYjMvdGhhbmtzLw==';
   });
 
   /* ── Sync lcTimer with main page timer ── */
